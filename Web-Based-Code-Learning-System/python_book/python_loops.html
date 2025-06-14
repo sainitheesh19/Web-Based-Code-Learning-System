@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/python_book.css">
+  <title>LearnMate</title>
+</head>
+
+<body>
+  <div class="page_wrapper">
+    <div class="topnav sticky" id="myTopnav">
+        <a href="#title" class="active home">LEARN <span>MATE</span></a>
+        <a class="act login_button" href="../login.html">login/signup</a>
+        <a class="act" href="../request_book.html">Request book</a>
+        <a class="act" href="#contact">Contact us</a>
+        <a class="act" href="../quiz.html">quizes</a>
+        <a class="act" href="../books.html">Books</a>
+        <a class="act" href="../index.html">Home</a>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- documentation -->
+    <nav id="navbar">
+        <header>C Tutorial</header>
+        <ul>
+            <li><a href="#" class="nav-lang">Python language</a></li>
+            <li><a class="nav-link" href="python_roadmap.html" target="_blank">Python roadmap</a></li>
+            <li><a class="nav-link" href="python_book.html">Python Introduction</a></li>
+            <li>
+                <a class="nav-link" href="python_started.html">Python Getstarted</a>
+            </li>
+            <li><a class="nav-link" href="python_hello.html">Python Hello world</a></li>
+            <li><a class="nav-link" href="python_var.html">Python Variables</a></li>
+            <li><a class="nav-link" href="python_data.html">Python Data types</a></li>
+            <li>
+                <a class="nav-link" href="python_cond.html">Python if...else statement</a>
+            </li>
+            <li><a class="nav-link" href="python_loops.html">Python loops statement</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- C book data -->
+    <main id="main-doc">
+      <section class="main-section" id="Getstarted">
+
+        <header>while statement</header>
+        <article>
+          A while statement executes its statements as long as a specified condition
+          evaluates to true. A while statement looks as follows:
+
+          <code>while (condition) {
+                  // code block to be executed
+                }</code> The while loop loops through a block of code as long as a specified condition is true:
+          <p>
+            In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less
+            than 6:.
+          </p>
+
+          <p>
+            The example below uses a do/while loop. The loop will always be executed at least once, even if the
+            condition is false, because the code block is executed before the condition is tested:.
+          </p>
+
+          Example:
+
+          <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less
+            than 6:</p>
+
+          </code>i=1 
+          while i < 6: 
+          print(i) 
+          i +=1 </code>
+
+            <!-- responsive iframe -->
+            <div class="container">
+              <iframe class="responsive-iframe"
+                src="https://www.youtube.com/embed/PqFKRqpHrjw?modestbranding=1"></iframe>
+            </div>
+
+
+
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="../javascript/index.js"></script>
+</body>
+
+</html>

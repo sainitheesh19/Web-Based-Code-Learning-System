@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/c_book.css">
+    <title>LearnMate</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <div class="topnav sticky" id="myTopnav">
+            <a href="#title" class="active home">LEARN <span>MATE</span></a>
+            <a class="act login_button" href="../login.html">login/signup</a>
+            <a class="act" href="../request_book.html">Request book</a>
+            <a class="act" href="#contact">Contact us</a>
+            <a class="act" href="../quiz.html">quizes</a>
+            <a class="act" href="../books.html">Books</a>
+            <a class="act" href="../index.html">Home</a>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- documentation -->
+        <nav id="navbar">
+            <header>C Tutorial</header>
+            <ul>
+                <li><a href="#" class="nav-lang">C language</a></li>
+                <li><a class="nav-link" href="c_roadmap.html" target="_blank">C roadmap</a></li>
+                <li><a class="nav-link" href="c_book.html">C Introduction</a></li>
+                <li>
+                    <a class="nav-link" href="c_started.html">C Getstarted</a>
+                </li>
+                <li><a class="nav-link" href="c_hello.html">C Hello world</a></li>
+                <li><a class="nav-link" href="c_var.html">C Variables</a></li>
+                <li><a class="nav-link" href="c_data.html">C Data types</a></li>
+                <li>
+                    <a class="nav-link" href="c_cond.html">C if...else statement</a>
+                </li>
+                <li><a class="nav-link" href="c_loops.html">C loops statement</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- C book data -->
+        <main id="main-doc">
+            <section class="main-section" id="Getstarted">
+
+                <header>if...else statement</header>
+                <article>
+                    Use the if statement to execute a statement if a logical condition is
+                    true. Use the optional else clause to execute a statement if the condition
+                    is false. An if statement looks as follows:
+
+                    <code>if (condition) {
+                          // block of code to be executed if the condition is true
+                        }</code>
+                    condition can be any expression that evaluates to true or false. See
+                    Boolean for an explanation of what evaluates to true and false. If
+                    condition evaluates to true, statement_1 is executed; otherwise,
+                    statement_2 is executed. statement_1 and statement_2 can be any statement,
+                    including further nested if statements.
+                    <p>
+                        You may also compound the statements using else if to have multiple
+                        conditions tested in sequence, as follows:
+                    </p>
+                    <code>
+                          if (20 > 18) {
+                            printf("20 is greater than 18");
+                          }
+                        </code>
+                    In the case of multiple conditions only the first logical condition which
+                    evaluates to true will be executed. To execute multiple statements, group
+                    them within a block statement ({ ... }) . In general, it's good practice
+                    to always use block statements, especially when nesting if statements:
+
+                    <code>if (condition) {
+                            // block of code to be executed if the condition is true
+                          } else {
+                            // block of code to be executed if the condition is false
+                          }</code>
+                    It is advisable to not use simple assignments in a conditional expression,
+                    because the assignment can be confused with equality when glancing over
+                    the code. For example, do not use the following code:
+                    <code>int time = 20;
+                          if (time < 18) {
+                            printf("Good day.");
+                          } else {
+                            printf("Good evening.");
+                          }
+                          // Outputs "Good evening."</code> If you need to use an
+                    assignment in a conditional expression, a common practice is to put
+                    additional parentheses around the assignment. For example:
+
+                    <code>int x = 20;
+                          int y = 18;
+                          if (x > y) {
+                            printf("x is greater than y");
+                          }</code>
+
+                    <!-- responsive iframe -->
+                    <div class="container">
+                        <iframe class="responsive-iframe"
+                            src="https://www.youtube.com/embed/wWL1HdJJkrk?modestbranding=1"></iframe>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>

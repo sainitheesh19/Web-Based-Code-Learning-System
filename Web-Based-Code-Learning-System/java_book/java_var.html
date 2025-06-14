@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/java_book.css">
+    <title>LearnMate</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <div class="topnav sticky" id="myTopnav">
+            <a href="#title" class="active home">LEARN <span>MATE</span></a>
+            <a class="act login_button" href="../login.html">login/signup</a>
+            <a class="act" href="../request_book.html">Request book</a>
+            <a class="act" href="#contact">Contact us</a>
+            <a class="act" href="../quiz.html">quizes</a>
+            <a class="act" href="../books.html">Books</a>
+            <a class="act" href="../index.html">Home</a>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- documentation -->
+        <nav id="navbar">
+            <header>C Tutorial</header>
+            <ul>
+                <li><a href="#" class="nav-lang">Java language</a></li>
+                <li><a class="nav-link" href="java_roadmap.html" target="_blank">Java roadmap</a></li>
+                <li><a class="nav-link" href="java_book.html">Java Introduction</a></li>
+                <li>
+                    <a class="nav-link" href="java_started.html">Java Getstarted</a>
+                </li>
+                <li><a class="nav-link" href="java_hello.html">Java Hello world</a></li>
+                <li><a class="nav-link" href="java_var.html">Java Variables</a></li>
+                <li><a class="nav-link" href="java_data.html">Java Data types</a></li>
+                <li>
+                    <a class="nav-link" href="java_cond.html">Java if...else statement</a>
+                </li>
+                <li><a class="nav-link" href="java_loops.html">Java loops statement</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- C book data -->
+        <main id="main-doc">
+            <section class="main-section" id="#Hello_world">
+                <header>Variables</header>
+                <article>
+                    Variables are containers for storing data values.
+
+                    In Java, there are different types of variables, for example:
+
+                    String - stores text, such as "Hello". String values are surrounded by double quotes
+                    int - stores integers (whole numbers), without decimals, such as 123 or -123
+                    float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+                    char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+                    boolean - stores values with two states: true or false
+                    </p>
+                    <p>
+                        To create a variable, you must specify the type and assign it a value:
+                        <code>int myNum;
+                            myNum = 15;
+                            System.out.println(myNum);;// Now myNum is 10</code>Note: If you assign a new value to an
+                        existing variable, it
+                        will overwrite the previous value:
+                    </p>
+                    <p>
+                        Note that if you assign a new value to an existing variable, it will overwrite the previous
+                        value:
+                        <code>printf("Hello World!");</code> In many other programming languages (like Python, Java, and
+                        C++), you
+                        would normally use a print function to display the value of a variable. However, this is not
+                        possible in C:
+                    </p>
+                    <code>
+                  int myNum = 15;
+                  printf(myNum);  // Nothing happens
+                </code>
+
+                    <!-- responsive iframe -->
+                    <div class="container">
+                        <iframe class="responsive-iframe"
+                            src="https://www.youtube.com/embed/4ekASokneGU?modestbranding=1"></iframe>
+                    </div>
+
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>
